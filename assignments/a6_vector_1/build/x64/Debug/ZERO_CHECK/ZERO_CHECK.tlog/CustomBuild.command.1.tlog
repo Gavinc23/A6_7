@@ -1,0 +1,10 @@
+^C:\USERS\GAVIN\FALL253514\A6.7\A6_7\ASSIGNMENTS\A6_VECTOR_1\BUILD\CMAKEFILES\3DD6106CDA0E3DEB8564A7892F30FA10\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/gavin/Fall253514/A6.7/A6_7/assignments/a6_vector_1 -BC:/Users/gavin/Fall253514/A6.7/A6_7/assignments/a6_vector_1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/gavin/Fall253514/A6.7/A6_7/assignments/a6_vector_1/build/a6_vector_1.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

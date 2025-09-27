@@ -67,5 +67,6 @@
         "cinttypes": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "C:/Users/gavin/Fall253514/A6.7/A6_7/assignments/a6_vector_1"
 }

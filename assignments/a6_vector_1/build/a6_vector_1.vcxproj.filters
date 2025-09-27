@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\gavin\Fall253514\A6.7\A6_7\assignments\a6_vector_1\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gavin\Fall253514\A6.7\A6_7\assignments\a6_vector_1\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BB6010EC-05C9-31A0-A898-0AF48794F29C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+C:/Users/gavin/Fall253514/A6.7/A6_7/assignments/a6_vector_1/build/CMakeFiles/a6_vector_1.dir
+C:/Users/gavin/Fall253514/A6.7/A6_7/assignments/a6_vector_1/build/CMakeFiles/my_test.dir
+C:/Users/gavin/Fall253514/A6.7/A6_7/assignments/a6_vector_1/build/CMakeFiles/RUN_TESTS.dir
+C:/Users/gavin/Fall253514/A6.7/A6_7/assignments/a6_vector_1/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/gavin/Fall253514/A6.7/A6_7/assignments/a6_vector_1/build/CMakeFiles/ZERO_CHECK.dir

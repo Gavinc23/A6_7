@@ -17,7 +17,7 @@ void reallocate(int new_cap){
         return;
     }
     T* new_data = new T[new_cap];
-    for(int k = 0; k <= sz-1){
+    for(int k = 0; k <= sz-1; k++){
         new_data[k] = data[k];
     }
     delete[] data;
@@ -137,7 +137,7 @@ public:
             data = new_data;
             cap = minimum;
         }
-
+    }
 /*    }
  if cap > 0 and sz <= cap / 4:
         new_cap <- max(1, cap/2)
@@ -159,5 +159,5 @@ public:
     }
 
 }; //end class Vector
-};//end namespace dsa
+}//end namespace dsa
 
