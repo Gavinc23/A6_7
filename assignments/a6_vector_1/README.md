@@ -23,6 +23,7 @@ private:
     int sz{0};
     T* data{nullptr};
 
+
 public:
     //empty
     Vector();
