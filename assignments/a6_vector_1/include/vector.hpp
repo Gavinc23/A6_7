@@ -57,7 +57,7 @@ public:
     // at function for const
     const T& at(int i) const{
         if( i < 0 || i >= sz){
-            throw "out of bounds error";
+            throw std::out_of_range("out of bounds error");
         }
         return data[i];
     }
@@ -65,7 +65,7 @@ public:
     // at function for non const
     T& at(int i){
          if( i < 0 || i >= sz){
-            throw "out of bounds error";
+            throw std::out_of_range("out of bounds error");
         }
         return data[i];
     }

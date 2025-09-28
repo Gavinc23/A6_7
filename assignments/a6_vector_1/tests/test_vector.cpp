@@ -37,6 +37,7 @@ TEST_CASE("basic functions") { //capacity, size, empty, operator, front, back, (
    REQUIRE(const_v.back() == 3);
    REQUIRE(const_v.at(2) == 3);
    REQUIRE(const_v[2] == 3);
+   REQUIRE_THROWS_AS(const_v.at(5), std::out_of_range);
 
 }
 
