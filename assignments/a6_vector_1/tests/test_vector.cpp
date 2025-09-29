@@ -11,7 +11,7 @@ TEST_CASE("Default constructor creates empty vector") {
 }
 
 
-TEST_CASE("basic functions") { //capacity, size, empty, operator, front, back, (const and noraml), AND push_back
+TEST_CASE("basic functions (and at edge case)") { //capacity, size, empty, operator, front, back, (const and noraml), AND push_back
    dsa::Vector<int> v; //normal, not const
 
    REQUIRE(v.capacity() == 0);
@@ -90,3 +90,45 @@ TEST_CASE("reserve reserves") {
     v.push_back(1);
     REQUIRE(v[0] == 1);
 }
+//edge cases
+
+
+TEST_CASE("shrink min cap"){
+    dsa::Vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    REQUIRE(v.capacity() == 4);
+    v.pop_back();
+    v.pop_back();
+    v.pop_back();
+    REQUIRE(v.capacity() == 1);
+}
+
+TEST_CASE("shrink to fit reduce cap to sz"){
+     dsa::Vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    v.reserve(10);
+    REQUIRE(v.capacity() == 10);
+    v.shrink_to_fit();
+    REQUIRE(v.capacity() == 3);
+}
+
+TEST_CASE("reserve edge"){
+    dsa::Vector<int> v;
+    v.reserve(10);
+    REQUIRE(v.capacity() == 10);
+    v.reserve(5);
+    REQUIRE(v.capacity() == 10);
+}
+
+TEST_CASE("insert as start and end"){
+    dsa::Vector<int> v;
+    v.insert(0,1);
+    v.insert(1,2);
+    REQUIRE(v.front() == 1);
+    REQUIRE(v.back() == 2);
+}
+
